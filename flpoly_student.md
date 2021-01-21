@@ -4,20 +4,26 @@
 
 DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
 
-- Course 1
+- Course 1: Art Apprectiation
 
-- Course 2
+- Course 2: Introduction to Data Science
 
-- Course 3
+- Course 3: Object Oriented Programming
 
-- Course 4
+- Course 4: Digital Media Production 
+
+- Course 5: Concepts and Methods
+
+- Course 6: Analytic Geometry and Calculus 2
 
 **Hobbies:**
 
 I am _passionate about_: 
 
-- Thing 1
+- Programming 
 
-- Thing 2
+- Computer Hardware
 
-- Thing 3 as shown in this website <https://www.floridapoly.edu>
+- Movies 
+
+as shown in this website <https://www.floridapoly.edu>
