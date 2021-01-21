@@ -1,4 +1,4 @@
-## Henry Martinez
+## Henry A. Martinez
 
 ### Spring 2021 
 
