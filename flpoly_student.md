@@ -4,7 +4,19 @@
 
 DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
 
-- Course 1: Art Apprectiation
+|Prefix| Number| Name                           | Credit|
+|------|-------|--------------------------------|-------|
+|      |       |Object Oriented Programming     |       |
+|      |       |                                |       |
+|      |       |                                |       |
+|
+
+
+
+
+
+
+- Course 1: Art Appreciation
 
 - Course 2: Introduction to Data Science
 
