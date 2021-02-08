@@ -4,13 +4,14 @@
 
 DSBA student at [Florida Polytechnic University](https://www.floridapoly.edu) currently enrolled in: 
 
-|Prefix| Number| Name                           | Credit|
-|------|-------|--------------------------------|-------|
-|      |       |Object Oriented Programming     |       |
-|      |       |                                |       |
-|      |       |                                |       |
-|
-
+|Prefix | Number  | Name                             | Credit|
+|-------|---------|----------------------------------|-------|
+|**COP**|**3337C**|_Object Oriented Programming_     |     3 |
+|**COP**|**2073** |_Introduction to Data Science_    |     3 |
+|**ARH**|**2000** |_Art Appreciation_                |     3 |
+|**DIG**|**2520c**|_Digital Media Production_        |     3 |
+|**ENG**|**1007C**|_Concepts and Methods_            |     1 |
+|**MAC**|**2312** |_Analytic Geometry and Calculus 2_|     4 |
 
 
 
