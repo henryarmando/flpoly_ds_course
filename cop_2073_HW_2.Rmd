@@ -1,0 +1,98 @@
+---
+title: "Introduction to Data Science - HW 2"
+author: "Henry Martinez - `hmartinez9328@floridapoly.edu`"
+output: html_notebook
+---
+
+
+
+# Problem 1 (30 points)
+
+
+|Prefix | Number  | Name                             | Credit|
+|-------|---------|----------------------------------|-------|
+|**COP**|**3337C**|_Object Oriented Programming_     |     3 |
+|**COP**|**2073** |_Introduction to Data Science_    |     3 |
+|**ARH**|**2000** |_Art Appreciation_                |     3 |
+|**DIG**|**2520c**|_Digital Media Production_        |     3 |
+|**ENG**|**1007C**|_Concepts and Methods_            |     1 |
+|**MAC**|**2312** |_Analytic Geometry and Calculus 2_|     4 |
+
+
+
+
+b. Link to [Github Repo](https://github.com/henryarmando/flpoly_ds_course/blob/main/flpoly_student.md)
+
+c. 
+
+
+# Problem 2 (30 points)
+
+
+## Calculus 2
+- integrations by parts
+
+
+## Digital Media Productions
+- [Multitrack mixing](https://helpx.adobe.com/audition/how-to/setting-up-multitrack-sessions-audition.html)
+- Correcting Audio harmonies
+
+
+
+# Problem 3 (40 points)
+
+In this problem you will practice some basic R operations. Include solutions to each items by inserting a new R chunk of code (make sure you run the chunk so that the output is displayed)
+
+(a) Create a variable called `my_name` that contains your preferred name.
+
+(b) Create a variable called `name_length` that holds how many letters are in `my_name`.
+
+(c) Show which value is bigger: $e^\pi$ or $\pi^e$. 
+
+(d) Define a function called `add_tree` that takes a single argument and returns a value 3 times larger than the input.
+
+(e) Use the colon operator `:` to create a vector `v` of numbers from 10 to 49. Find the length of this vector using the `length()` function.
+
+(f) Use the `seq()` function to produce a range of number from -5 to 10 in 0.5 increments.
+```{r}
+#problems a - b
+my_name <- "vell"
+name_length <- nchar(my_name)
+print(name_length)
+
+#problem c
+
+if(exp(pi) > pi^exp(1)){
+  print("e^pi")
+  
+}else{
+  print("pi^e")
+}
+
+#problem d
+add_tree <- function(input){
+  
+  output <- input *3
+  
+  output
+}
+add_tree(3)
+
+
+#problem e
+
+v <- c(10:49)
+vector_length <- length(v)
+print(vector_length)
+
+
+#problem f
+seq(-5, 10, 0.5)
+
+
+```
+
+
+
+
+
