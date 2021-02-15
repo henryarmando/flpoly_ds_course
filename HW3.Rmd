@@ -1,0 +1,269 @@
+---
+title: "Introduction to Data Science"
+subtitle: "Homework 2"
+author: "Henry Martinez - `hmartinez9328@floridapoly.edu`"
+output: html_notebook
+---
+
+
+
+# Problem 1 
+
+(a) (10 points) Define a function `imperial_to_metric` that takes in two arguments: a number of feet and a number of inches. The function should return the equivalent length in meters
+
+```{r}
+imperial_to_metric <- function(feet, inches){
+  feet = feet * 12
+  total <- feet + inches
+  meters <- total * 0.0254
+  
+}
+```
+
+
+
+(b) (5 points) Create a variable `height_in_meters` by passing your height in imperial to the `imperial_to_metric` function
+
+```{r}
+
+height_in_meters <- imperial_to_metric(5,11)
+print(height_in_meters)
+
+```
+
+
+
+# Problem 2
+
+`R` comes with many functions that you can use to do sophisticated tasks like random sampling. For example, you can round a number with the `round()` function, or calculate its factorial with the `factorial()` function. Using a function is pretty simple. Just write the name of the function and then the data you want the function to operate on in parentheses.
+
+(a) (5 points) Find `round(3.1415)`, `factorial(12)`, `mean(1:17)`.
+```{r}
+
+round(3.1415)
+
+factorial(12)
+
+mean(1:17)
+
+```
+
+
+
+(b) (5 points) You can create an object named `die` that contains the numbers one through six:
+
+```{r}
+
+
+die <- 1:6
+```
+
+You can simulate a roll of the die with `R`’s `sample()` function. `sample()` takes two arguments: a vector named `x` and a number named `size`. 
+
+Try `sample(x = die, size = 1)`. 
+```{r}
+sample(x = die, size = 1)
+
+```
+
+
+Is there any difference if you type `sample(die, size = 1)` ?
+
+
+```{r}
+sample(die, size = 1)
+print("There is no difference")
+
+
+```
+
+
+
+# Problem 3
+
+Use `R` as a calculator to compute the following values:
+
+(a) (5 points) $27 (38 -17)$
+
+```{r}
+
+print(27*(38-17))
+
+```
+
+
+(b) (5 points) $ln(14^7)$
+
+```{r}
+print(log(14^7))
+```
+
+
+(c) (5 points) $\sqrt\frac{436}{12}$
+```{r}
+
+print(sqrt(436/12))
+```
+
+
+
+
+
+# Problem 4
+
+Create the following vectors in `R`:
+
+$a = (5, 10, 15, 20, ..., 160)$
+```{r}
+a = seq(5,160,5)
+print(a)
+```
+
+
+
+$b = (87, 86, 85, ..., 56)$
+```{r}
+b = seq(87,56,-1)
+
+print(b)
+```
+
+
+
+(a) (5 points) Multiply these vectors and call the result `d`. 
+
+```{r}
+d <- b*a
+print(d)
+```
+
+
+(b) (15 points) Select subsets of `d` to identify the following.
+
+
+
+
+- What are the 19th, 20th, and 21st elements of `d`?
+
+```{r}
+print(d[19:21])
+
+```
+
+
+
+- What are all of the elements of `d` which are less than 2000?
+```{r}
+print(d[d<2000])
+```
+
+
+
+- How many elements of `d` are greater than 6000?
+```{r}
+print(d[d>6000])
+
+```
+
+
+
+
+# Problem 5
+
+Start with this vector of `nouns`.  
+
+```{r}
+nouns <- c("apple", "flower", "insect", "lettuce", "knife", "dog", "cloud", "person", "cabinet", "flower" )
+```
+
+(a) (5 points) Use the `length()` function to display the number of elements in `nouns`.
+
+```{r}
+print(length(nouns))
+```
+
+
+(b) (5 points) Use indexing to create a new vector consisting of the first 4 elements of `nouns`.
+
+```{r}
+First_Four <- nouns[1:4]
+print(First_Four)
+```
+
+
+
+(c) (5 points) Use indexing to create a new vector consisting of only the last 8 elements of `nouns`.
+```{r}
+Last_Eight <- nouns[3:10]
+print(Last_Eight)
+```
+
+
+
+(d) (5 points) Use indexing to create a new vector of the 1st, 3rd through 6th, and 10th elements of `nouns` (the length of the resulting vector should be 6)
+
+```{r}
+
+
+BoolSort <- c(TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, TRUE)
+Mixed_Vector <- nouns[BoolSort]
+print(Mixed_Vector)
+
+```
+
+
+
+(e) (5 points) Create a new vector with the elements of `nouns` in reverse order.
+```{r}
+Reverse_Vector <- nouns[10:1]
+print(Reverse_Vector)
+
+```
+
+
+
+
+# Problem 6
+
+Consider the function `rescale01` defined as 
+
+```{r}
+rescale01 <- function(x) {
+  rng <- range(x, na.rm = TRUE, finite = TRUE)
+  (x - rng[1]) / (rng[2] - rng[1])
+}
+```
+
+(a) (5 points) Evaluate `rescale01(c(0, 5, 10))`
+
+```{r}
+
+print(rescale01(c(0, 5, 10)))
+print(rescale01(c(100, 1000, 200)))
+
+
+```
+
+
+
+(b) (5 points) Describe what the `rescale01` function does.
+
+```{r}
+print("The rescale function takes the minimum and maximum values of the input vector. Afterwards, it takes each element in the input vector, subtracts it by the minimum value, and then divides the given number by the difference of the maximum and minimum elements of the input vector.")
+
+```
+
+
+
+(c) (5 points) What would happen if `x` contained a single missing value, and `na.rm` was `FALSE`? Show an example.
+
+
+```{r}
+
+print("If na.rm was flase and x contained a missing value it would return NA for that element because na.rm determines whether or not NA's are ommited from the vector.")
+
+
+```
+
+
+
