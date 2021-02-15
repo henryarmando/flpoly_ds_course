@@ -163,6 +163,9 @@ print(d[d<2000])
 ```{r}
 print(d[d>6000])
 
+Totalnum <- length(d[d>6000])
+print(Totalnum)
+
 ```
 
 
