@@ -239,7 +239,6 @@ rescale01 <- function(x) {
 ```{r}
 
 print(rescale01(c(0, 5, 10)))
-print(rescale01(c(100, 1000, 200)))
 
 
 ```
@@ -260,7 +259,14 @@ print("The rescale function takes the minimum and maximum values of the input ve
 
 ```{r}
 
-print("If na.rm was flase and x contained a missing value it would return NA for that element because na.rm determines whether or not NA's are ommited from the vector.")
+print("If na.rm was flase and x contained a missing value it would return NA for that element because na.rm determines whether or not NA's are ommited from the vector. Here's an example")
+
+rescale02 <- function(x) {
+  rng <- range(x, na.rm = FALSE, finite = TRUE)
+  (x - rng[1]) / (rng[2] - rng[1])
+}
+
+print(rescale02(c(10,NA,15)))
 
 
 ```
